@@ -6,8 +6,9 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <title>Vanilla Crescents Recipe</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
 </head>
-<body>
+<body id="disableSelection">
     <div class="Titel">  
         <h1 class="titel">❄ Vanilla Crescents ❄</h1> 
     </div>
@@ -15,16 +16,24 @@
 
     <div class="bildright-container">
         <ul class="bildrighttext">
-            <h3 class="Zutatentitel">Ingredients for 8 people</h3>   
-            <li>250 g	Flour</li>
-            <li class="abstand">100 g	Peeled ground almonds</li>
-            <li>80 g	Icing sugar</li>
-            <li>1 packet	Vanilla sugar</li>
-            <li>1 pinch	Salt</li>
-            <li>200 g	Cold butter</li>
-            <li>1	Egg</li>
-            <li>6 tbsp Icing sugar</li>
-            <li>1 packet    Vanilla sugar</li>
+            <h3 class="Zutatentitel">Ingredients for 8 people</h3>
+            <l><input type="checkbox" id="flour"> <label for="flour" id="flour-label">250 g Flour</label></li>
+                <br>
+            <l class="abstand"><input type="checkbox" id="ground-almonds"> <label for="ground-almonds" id="ground-almonds-label">100 g Peeled ground almonds</label></li>
+                <br>
+            <l><input type="checkbox" id="icing-sugar"> <label for="icing-sugar" id="icing-sugar-label">80 g Icing sugar</label></li>
+                <br>
+            <l><input type="checkbox" id="vanilla-sugar"> <label for="vanilla-sugar" id="vanilla-sugar-label">1 packet Vanilla sugar</label></li>
+                <br>
+            <l><input type="checkbox" id="salt"> <label for="salt" id="salt-label">1 pinch Salt</label></li>
+                <br>
+            <l><input type="checkbox" id="cold-butter"> <label for="cold-butter" id="cold-butter-label">200 g Cold butter</label></li>
+                <br>
+            <l><input type="checkbox" id="egg"> <label for="egg" id="egg-label">1 Egg</label></li>
+                <br>
+            <l><input type="checkbox" id="icing-sugar2"> <label for="icing-sugar2" id="icing-sugar2-label">6 tbsp Icing sugar</label></li>
+                <br>
+            <l><input type="checkbox" id="vanilla-sugar2"> <label for="vanilla-sugar2" id="vanilla-sugar2-label">1 packet Vanilla sugar</label></li>
         </ul>
         <img src="Titelbild.jpg" class="bild">
     </div>
@@ -101,7 +110,7 @@
     let browserHeight;
   
 
-    let numberOfSnowflakes = 300;
+    let numberOfSnowflakes = 100;
   
     let resetPosition = false;
   
@@ -240,6 +249,27 @@
       resetPosition = true;
     }
   </script>
+
+<script>
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function () {
+            const label = document.querySelector(`label[for="${this.id}"]`);
+            if (this.checked) {
+                label.classList.add('strikethrough');
+            } else {
+                label.classList.remove('strikethrough');
+            }
+        });
+    });
+</script>
+
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
 
 </body>
 </html>

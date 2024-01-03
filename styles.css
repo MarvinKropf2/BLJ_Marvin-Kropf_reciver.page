@@ -119,7 +119,7 @@ body
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .abstand{
-    margin-right: 32px;
+    margin-right: 160px;
 }
 .Impressum{ /* Titel */
     display: flex;
@@ -224,6 +224,9 @@ body
     font-size: 24px; 
     color: #c9c9c9;
   }
-#hr1{
-    animation: rgbEffect 4s infinite;
+  #disableSelection {
+    user-select: none;
+}
+.strikethrough {
+    text-decoration: line-through;
 }
