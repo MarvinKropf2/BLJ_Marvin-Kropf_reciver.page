@@ -1,20 +1,23 @@
+
 body
 {
-    background-color:#F0F2EA;
+    background-color:#000000;
+    overflow: hidden;
 }
 .Titel{
     display: flex;
     justify-content: center;
     align-items: center;   
-    color: #80083E;
+    color: #ffffff;
     text-decoration:none;
     font-family:Verdana, Geneva, Tahoma, sans-serif
     
 }
-.titel{
-    color: #80083E;
+.titel{ /* Titel */
+    color: #993e3e;
     text-decoration:none;
     margin-right: 20px;
+    animation: rgbEffect 4s infinite;
 }
 .HomePagePicture{
     border-radius: 10px;
@@ -25,25 +28,29 @@ body
     justify-content: center;
     align-items: center;
 }
-.Zutatentitel{
+.Zutatentitel{ /* Titel */
     margin-left: 20px;
     font-size: 25px;
-    color: #80083E;
+    color: #993e3e;
     text-decoration:none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: rgbEffect 4s infinite;
 }
 .Zutatenliste{ 
-    color: #80083E;
+    color: #ffffff;
     text-decoration:none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.zubereitung{
+.zubereitung{ /* Titel */
     display: flex;
     justify-content: center;
     align-items: center;   
-    color: #80083E;
+    color: #993e3e;
     text-decoration:none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    animation: rgbEffect 4s infinite;
 }
 .zubereitungliste{
     font-size: 25px;
@@ -51,25 +58,27 @@ body
     display: flex;
     justify-content: center;
     align-items: center;   
-    color: #80083E;
+    color: #ffffff;
     text-decoration:none;
     max-width: 1000px;
     margin-left: 23.5%;
     line-height: 1.6;
 }
-.Zusatz{
+.Zusatz{ /* Titel */
     display: flex;
     justify-content: center;
     align-items: center;   
-    color: #80083E;
+    color: #993e3e;
     text-decoration:none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    animation: rgbEffect 4s infinite;
 }
 .Zusatziste{
     display: flex;
     justify-content: center;
     align-items: center;   
-    color: #80083E;
+    color: #ffffff;
     text-decoration:none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
@@ -98,7 +107,7 @@ body
     margin-left: 300px;
     font-size: 25px;
     line-height: 1.6;
-    color: #80083E;
+    color: #ffffff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -112,44 +121,109 @@ body
 .abstand{
     margin-right: 32px;
 }
-.Impressum{
+.Impressum{ /* Titel */
     display: flex;
     justify-content: center;
     align-items: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
+    color: #993e3e;
     text-decoration:none;
     margin-right: 20px;
     font-size: 25px;
+    font-weight: bold; 
+    animation: rgbEffect 4s infinite;
 }
-.Impressumtext{
+.Impressumtext {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
-    text-decoration:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
     margin-right: 20px;
     font-size: 25px;
+    font-weight: bold; 
 }
+@keyframes rgbEffectd {
+    0% {
+        box-shadow: 0 0 5px red, 0 0 15px red;
+        background-color: #993e3e; 
+    }
+    50% {
+        box-shadow: 0 0 5px green, 0 0 15px green;
+        background-color: #3e994c; 
+    }
+    100% {
+        box-shadow: 0 0 5px red, 0 0 15px red;
+        background-color: #993e3e; 
+    }
+}
+@keyframes rgbEffect {
+    0% {
+        color: red;
+    }
+    50% {
+        color: green;
+    }
+    100% {
+        color: red;
+    }
+    }
+
 .downloadButton {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: inline-block;
     padding: 8px 15px;
     margin: 5px;
-    background-color: #f2f2f2;
     color: black;
     text-decoration: none;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 849px;
+    margin-bottom: 17px;
     margin-top: 15px;
+    position: relative;
+
+    animation: rgbEffectd 4s infinite;
 }
 
 .downloadButton:hover {
-    background-color: #ddd;
+    background-color: #00741f;
+}
+
+.headmenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navigation{
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    margin-right: 20px;
+}
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    font-size: 24px; 
+    color: #c9c9c9;
+  }
+#hr1{
+    animation: rgbEffect 4s infinite;
 }
