@@ -1,0 +1,102 @@
+body
+{
+    background-color:#F0F2EA;
+}
+.Titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.HomePagePicture{
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Zutatentitel{
+    margin-left: 20px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.Zutatenliste{ 
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.zubereitung{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.zubereitungliste{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.Zusatz{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.Zusatziste{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.bildright-container {
+    display: flex;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.bildright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 600px;
+    height: auto;
+    margin-right: 320px;
+    margin-top: 10px;
+}
+
+.bildrighttext {
+    
+    margin-left: 300px;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.bildrightbesch {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
