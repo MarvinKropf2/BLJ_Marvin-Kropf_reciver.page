@@ -236,3 +236,15 @@ body
     width: 2px;
     height: auto;
   }
+  .img {
+    border-radius: 20px; 
+    width: 300px;
+    height: auto; 
+    margin-right: 10px; 
+  }
+  .zubereitungbild{
+    border-radius: 20px;
+    width: 300px;
+    height: auto; 
+    margin-right: 10px; 
+  }
