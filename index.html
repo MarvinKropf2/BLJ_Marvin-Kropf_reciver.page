@@ -102,19 +102,20 @@
     
 
 
-    <script>
-
-        window.addEventListener("wheel", function(e) {
-            if (e.deltaY !== 0) {
-                window.scrollBy(0, e.deltaY);
-            }
-        });
-    </script>
 
 <div id="snowflakeContainer">
     <span class="snowflake"></span>
   </div>
   
+  <script>
+
+    window.addEventListener("wheel", function(e) {
+        if (e.deltaY !== 0) {
+            window.scrollBy(0, e.deltaY);
+        }
+    });
+</script>
+
   <script>
 
     let snowflakes = [];
