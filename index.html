@@ -13,7 +13,7 @@
         <h1 class="titel">❄ Vanilla Crescents ❄</h1> 
     </div>
 
-
+    
     <div class="bildright-container">
         <ul class="bildrighttext">
             <h3 class="Zutatentitel">Ingredients for 8 people</h3>
@@ -98,7 +98,8 @@
     <div class="headmenu">
         <p><a class="Impressum" href="IMPRESSUM.html">IMPRESSUM</p></a>  
         <p><a class="downloadButton" href="vanillekipferl.pdf" download>Download Recipe</a></p>
-    </div>
+        <button id="toggleSnowflakes" class="downloadButton">Toggle Snowflakes</button>
+      </div>
     
 
 
@@ -107,6 +108,21 @@
     <span class="snowflake"></span>
   </div>
   
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.getElementById('toggleSnowflakes');
+        const snowflakeContainer = document.getElementById('snowflakeContainer');
+
+        toggleButton.addEventListener('click', () => {
+            if (snowflakeContainer.style.display === 'none') {
+                snowflakeContainer.style.display = 'block';
+            } else {
+                snowflakeContainer.style.display = 'none';
+            }
+        });
+    });   
+  </script>
+
   <script>
 
     window.addEventListener("wheel", function(e) {

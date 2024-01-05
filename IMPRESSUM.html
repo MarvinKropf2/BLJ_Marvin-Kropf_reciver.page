@@ -45,22 +45,40 @@
     <div class="headmenu">
         <p><a class="Impressum" href="index.html">GO BACK</p></a>  
         <p><a class="downloadButton" href="vanillekipferl.pdf" download>Download Recipe</a></p>
-    </div>
+        <button id="toggleSnowflakes" class="downloadButton">Toggle Snowflakes</button>
+      </div>
     
 
-    <script>
 
-        window.addEventListener("wheel", function(e) {
-            if (e.deltaY !== 0) {
-                window.scrollBy(0, e.deltaY);
-            }
-        });
-    </script>
 
 <div id="snowflakeContainer">
     <span class="snowflake"></span>
   </div>
   
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.getElementById('toggleSnowflakes');
+        const snowflakeContainer = document.getElementById('snowflakeContainer');
+
+        toggleButton.addEventListener('click', () => {
+            if (snowflakeContainer.style.display === 'none') {
+                snowflakeContainer.style.display = 'block';
+            } else {
+                snowflakeContainer.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+  <script>
+
+    window.addEventListener("wheel", function(e) {
+        if (e.deltaY !== 0) {
+            window.scrollBy(0, e.deltaY);
+        }
+    });
+</script>
+
   <script>
 
     let snowflakes = [];
@@ -70,7 +88,7 @@
     let browserHeight;
   
 
-    let numberOfSnowflakes = 100;
+    let numberOfSnowflakes = 150;
   
     let resetPosition = false;
   
